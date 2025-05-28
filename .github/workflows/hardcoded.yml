@@ -1,0 +1,15 @@
+name: Hardcoded API Key
+
+on: [push]
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run script with hardcoded key
+        run: |
+          echo "Calling API with hardcoded key..."
+          curl "https://api.solar.com/data?apikey=12345-HARDCODED-KEY"
