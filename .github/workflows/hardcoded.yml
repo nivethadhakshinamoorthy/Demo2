@@ -12,4 +12,4 @@ jobs:
       - name: Run script with hardcoded key
         run: |
           echo "Calling API with hardcoded key..."
-          curl "https://api.solar.com/data?apikey=12345-HARDCODED-KEY"
+          curl "https://api.solar.com/data?apikey=9c808759c91d53ec6ba1cb677375bce3"
